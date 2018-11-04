@@ -36,7 +36,7 @@
             this.mnuGameExit = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAboutHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuAboutAboutGame = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCredits = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrShoot = new System.Windows.Forms.Timer(this.components);
             this.tmrPlanning = new System.Windows.Forms.Timer(this.components);
             this.lblP1Power = new System.Windows.Forms.Label();
@@ -135,7 +135,7 @@
             // 
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuAboutHelp,
-            this.mnuAboutAboutGame});
+            this.mnuCredits});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.aboutToolStripMenuItem.Text = "About";
@@ -143,20 +143,20 @@
             // mnuAboutHelp
             // 
             this.mnuAboutHelp.Name = "mnuAboutHelp";
-            this.mnuAboutHelp.Size = new System.Drawing.Size(141, 22);
+            this.mnuAboutHelp.Size = new System.Drawing.Size(152, 22);
             this.mnuAboutHelp.Text = "Help";
             this.mnuAboutHelp.Click += new System.EventHandler(this.mnuAboutHelp_Click);
             // 
-            // mnuAboutAboutGame
+            // mnuCredits
             // 
-            this.mnuAboutAboutGame.Name = "mnuAboutAboutGame";
-            this.mnuAboutAboutGame.Size = new System.Drawing.Size(141, 22);
-            this.mnuAboutAboutGame.Text = "About Game";
-            this.mnuAboutAboutGame.Click += new System.EventHandler(this.mnuAboutAboutGame_Click);
+            this.mnuCredits.Name = "mnuCredits";
+            this.mnuCredits.Size = new System.Drawing.Size(152, 22);
+            this.mnuCredits.Text = "Credits";
+            this.mnuCredits.Click += new System.EventHandler(this.mnuAboutCredits_Click);
             // 
             // tmrShoot
             // 
-            this.tmrShoot.Interval = 15;
+            this.tmrShoot.Interval = 10;
             this.tmrShoot.Tick += new System.EventHandler(this.tmrShoot_Tick);
             // 
             // tmrPlanning
@@ -167,6 +167,7 @@
             // lblP1Power
             // 
             this.lblP1Power.AutoSize = true;
+            this.lblP1Power.BackColor = System.Drawing.Color.Transparent;
             this.lblP1Power.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.lblP1Power.ForeColor = System.Drawing.Color.White;
             this.lblP1Power.Location = new System.Drawing.Point(183, 664);
@@ -227,13 +228,14 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("OCR A Extended", 20F);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("OCR A Extended", 18F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(484, 24);
+            this.label1.Location = new System.Drawing.Point(496, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 29);
+            this.label1.Size = new System.Drawing.Size(194, 25);
             this.label1.TabIndex = 19;
-            this.label1.Text = "TODAY\'S WIND:";
+            this.label1.Text = "Current Wind:";
             // 
             // lblReady1
             // 
@@ -250,7 +252,7 @@
             // lblReady2
             // 
             this.lblReady2.AutoSize = true;
-            this.lblReady2.Font = new System.Drawing.Font("OCR A Extended", 26.25F, System.Drawing.FontStyle.Italic);
+            this.lblReady2.Font = new System.Drawing.Font("OCR A Extended", 26.25F);
             this.lblReady2.ForeColor = System.Drawing.Color.White;
             this.lblReady2.Location = new System.Drawing.Point(861, 301);
             this.lblReady2.Name = "lblReady2";
@@ -538,7 +540,7 @@
         private System.Windows.Forms.Label lblP2Angle;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuAboutHelp;
-        private System.Windows.Forms.ToolStripMenuItem mnuAboutAboutGame;
+        private System.Windows.Forms.ToolStripMenuItem mnuCredits;
         private System.Windows.Forms.PictureBox picP1Ready;
         private System.Windows.Forms.PictureBox picP2Ready;
         private System.Windows.Forms.Label lblCurrentStage;
