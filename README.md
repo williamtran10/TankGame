@@ -1,6 +1,3 @@
-This is a game that I made as my culminating task in my grade 11 Computer Science course.
-
-
 # Tank Game
 
 Made in C# using Visual Studio 2017. To run, open the .sln file in Visual Studio.
